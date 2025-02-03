@@ -1,0 +1,5 @@
+Create a program that allows the users to create classroom and add students. Students will have their current letter grade for that classroom. For classroom, have methods to add or remove a student, pass or fail a student. For student, have methods grade letter assignment.
+
+Add appropriate properties for both classroom and student such as classroom name, teacher name, room number, a list of student; student name, letter grade.
+
+Make use of Overload and Override to facilitate information display.

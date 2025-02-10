@@ -54,39 +54,38 @@ class Ship
     // There can only be 1 captain and 1 chief officer on the ship
     public bool Add(Alien alien)
     {
-        // How can we check if this new 'alien' role is captain or chief officer, but,
-        // Make sure, there's only 1 captain and chief officer in the list of Aliens
-        if(alien.Role.Equals("captain", StringComparison.CurrentCultureIgnoreCase)) {
-            if (captain == null)
+        // Check if the new alien's role is either "captain" or "chief officer"
+        // and ensure there's only one of each in the aliens list.
+        if(alien.Role.Equals("captain", StringComparison.CurrentCultureIgnoreCase) || 
+            alien.Role.Equals("chief officer", StringComparison.CurrentCultureIgnoreCase)) {
+            
+            // Loop through the aliens array to check if a captain or chief officer already exists
+            for(int i = 0; i < aliens.Length; i++)
             {
-                captain = alien;
-                aliens[crewCount] = alien;
-                crewCount++;
-                return true;
+                // If an existing alien has the same role, return false (cannot add duplicate role)
+                if(aliens[i] != null && aliens[i].Role == alien.Role)
+                    return false;
             }
-            else
-                return false;
         }
 
-        if(alien.Role.Equals("chief officer", StringComparison.CurrentCultureIgnoreCase) &&
-            chiefOfficer == null)
-        {
-            chiefOfficer = alien;
-        }
-        else
+        // Check crew counter is not over capacity
+        if(crewCount > aliens.Length)
             return false;
 
-        // if it's not captain or chief officer, then it's a regular Alien crew
-        if(crewCount < aliens.Length)
+        // Find the first available (null) slot in the aliens array to add the new alien
+        for(int i = 0; i < aliens.Length; i++)
         {
-            aliens[crewCount] = alien;
-            crewCount++;
-
-            return true;
+            if(aliens[i] == null) // Empty spot found
+            {
+                aliens[i] = alien; // Assign the new alien to this spot
+                crewCount++; // Increment the crew count
+                break; // Stop the loop once the alien is added
+            }
         }
 
-        return false;
+        return true; // Return true indicating the alien was successfully added
     }
+
 
     public bool Remove(string name)
     {

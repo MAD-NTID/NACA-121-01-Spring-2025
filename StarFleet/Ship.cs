@@ -147,7 +147,7 @@ class Ship
         string crewListing = "";
         for(int i = 0; i < aliens.Length; i++)
         {
-            if(crewListing[i] != null)
+            if(aliens[i] != null)
             {
                 crewListing += $"Name: {aliens[i].Name} Role: {aliens[i].Role}\n";
             }

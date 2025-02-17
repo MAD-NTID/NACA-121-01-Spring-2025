@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList", "ArrayList\ArrayList.csproj", "{97D322C8-CE2C-1739-501E-7D4BE7469F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArrayList", "TestArrayList\TestArrayList.csproj", "{87DAE68A-018B-D0CF-2041-D25B8735E862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D322C8-CE2C-1739-501E-7D4BE7469F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D322C8-CE2C-1739-501E-7D4BE7469F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D322C8-CE2C-1739-501E-7D4BE7469F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D322C8-CE2C-1739-501E-7D4BE7469F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87DAE68A-018B-D0CF-2041-D25B8735E862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DAE68A-018B-D0CF-2041-D25B8735E862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DAE68A-018B-D0CF-2041-D25B8735E862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DAE68A-018B-D0CF-2041-D25B8735E862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B34C06DA-E14D-4E08-B340-92849C56DC03}
+	EndGlobalSection
+EndGlobal

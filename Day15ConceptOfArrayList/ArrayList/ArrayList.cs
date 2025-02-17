@@ -4,6 +4,13 @@ public class IntArrayList : IArrayList
 
     private int[] array;
     private int size;
+    public int Size
+    {
+        get 
+        {
+            return size;
+        }
+    }
 
     public IntArrayList()
     {
@@ -13,11 +20,6 @@ public class IntArrayList : IArrayList
     public IntArrayList(int capacity)
     {
         array = new int[capacity];
-    }
-
-    public int Size()
-    {
-        return size;
     }
 
     public bool Add(int element)

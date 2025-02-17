@@ -1,6 +1,6 @@
 public interface IArrayList
 {    
-    int Size();
+    int Size { get; }
     public bool Add(int element);
     public void Add(int index, int element);
     public void Clear();

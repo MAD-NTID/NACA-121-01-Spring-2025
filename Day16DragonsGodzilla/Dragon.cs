@@ -1,11 +1,14 @@
+using System;
+
 public class Dragon : Beast
 {
-    //  When you declare a virtual method in the parent class
-    //  The child class can do other behaviors different to its parent
-    //  By overriding it
-    public override string HelloWorld()
+    public Dragon(string name) : base(name) {}
+
+    // Override to specify that the Dragon uses fire breath.
+    public override void AbilityAttack(IBeast beast)
     {
-        // this will call the parent's HelloWorld
-        return base.HelloWorld() +  "\nMy dad said hello world, so me too, I am the child, 'Hello World'";
+        double damage = GetAbilityAttackDamage();
+        Console.WriteLine($"{Name} uses Fire Breath on {beast.Name} for {damage:F1} damage!");
+        beast.TakeDamage(damage);
     }
 }

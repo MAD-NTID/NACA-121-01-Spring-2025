@@ -1,16 +1,11 @@
 public interface IBeast
 {
-    public const string WATER = "Water";
-    public const string LIGHTNING = "Lightning";
+    string Name { get; }
+    double MaxHealth { get; }
+    double CurrentHealth { get; }
+    double AttackPower { get; }
 
-    public string Name { get; set; }
-    public double MaxHealth { get; set; }
-    public double CurrentHealth { get; set; }
-    public string Weakness { get; set; }
-
-    // How much damage is this beast getting
-    public void TakeDamage(double damage);
-
-    // Who is this beast attacking, and how much damage
-    public void Attack(IBeast beast, double damage);
+    void TakeDamage(double damage);
+    void Attack(IBeast beast);
+    void AbilityAttack(IBeast beast);
 }

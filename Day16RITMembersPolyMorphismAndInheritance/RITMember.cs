@@ -1,3 +1,4 @@
+// This is the Base class (parent)
 public class RITMember : IRITMember
 {
     public string Name { get; set; }

@@ -1,3 +1,4 @@
+// This is the interface for the Base class to implement
 public interface IRITMember
 {
     public string Name { get; set; }

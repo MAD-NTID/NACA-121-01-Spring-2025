@@ -1,11 +1,16 @@
+// This is a child class (derived class), inherits from parent RITMember (base class)
 public class Student : RITMember
 {
+    // This child class only difference is GPA, Program, in additiona
+    // To the parent's Name, Role, UID
     public double GPA { get; set; }
     public string Program { get; private set; }
 
-    public Student(string name, string uid) : base(name, "Student", uid)
+    // Child class's constructor
+    public Student(string name, string uid, string program, double gpa) : base(name, "Student", uid)
     {
-        Program = "Unknown";
+        Program = string.IsNullOrEmpty(program) ? "Unknown" : program;
+        GPA = gpa < 0 || gpa > 4 ? 0 : gpa; // make sure gpa is between 0 and 4
     }
 
     public bool SetProgram(string program)

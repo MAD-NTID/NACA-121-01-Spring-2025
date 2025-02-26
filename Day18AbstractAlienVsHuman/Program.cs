@@ -1,5 +1,5 @@
-﻿Alien talos = new("Talos", 100);
-Human nai = new("Nai", 18);
+﻿Alien talos = new Alien("Talos", 100);
+Human nai = new Human("Nai", 18);
 
 Console.WriteLine(talos);
 Console.WriteLine($"Talks: {talos.Talk()}");

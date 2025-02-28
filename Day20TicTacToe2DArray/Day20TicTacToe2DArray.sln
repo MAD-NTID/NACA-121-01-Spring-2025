@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day20TicTacToe2DArray", "Day20TicTacToe2DArray.csproj", "{30F48D60-4DEB-BFE3-D2E9-0FD9634196CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30F48D60-4DEB-BFE3-D2E9-0FD9634196CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F48D60-4DEB-BFE3-D2E9-0FD9634196CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F48D60-4DEB-BFE3-D2E9-0FD9634196CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F48D60-4DEB-BFE3-D2E9-0FD9634196CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51EE048B-AA41-4C74-B81D-F660D0C48457}
+	EndGlobalSection
+EndGlobal

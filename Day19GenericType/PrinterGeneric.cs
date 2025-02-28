@@ -3,7 +3,7 @@ public class Printer<T>
     // We create the array to hold values (printer jobs)
     // So this means, whatever type we instantiated with
     // that type the array will be
-    private T[] jobs;
+    private readonly T[] jobs;
     private int jobPositionPrinted, jobPositions;
 
     public int Size { get { return jobs.Length; }}

@@ -82,11 +82,52 @@ public class TicTacToeBoard
             }
         }
     
+        // Checking for Column Winnings
+        for(int c = 0; c < board.GetLength(1); c++) 
+        {
+            for(int r = 0; r < board.GetLength(0); r++)
+            {
+                if(board[r, c] == 'x')
+                    xConsecutive++;
+                else if(board[r, c] == 'o')
+                    oConsecutives++;
+                else
+                    continue;
+            }
+
+            // Do we have a winner?
+            if(xConsecutive == 3 || oConsecutives == 3)
+            {
+                Winner = true;
+                return;   
+            }
+            else  
+            {
+                // Set the consecutive count back to zero before movine to the next row
+                xConsecutive = 0; 
+                oConsecutives = 0; 
+            }
+        }
+
+        // Next we check cross vertical left to right
+        if( (board[0,0] == 'x' && board[1,1] == 'x' && board[2,2] == 'x') ||
+            (board[0,0] == 'o' && board[1,1] == 'o' && board[2,2] == 'o'))
+        {
+            Winner = true;
+            return;
+        }
+
+        // Next we check cross vertical right to left
+        if( (board[0,2] == 'x' && board[1,1] == 'x' && board[2,0] == 'x') ||
+            (board[0,2] == 'o' && board[1,1] == 'o' && board[2,0] == 'o'))
+        {
+            Winner = true;
+            return;
+        }
 
         // This means no one wins
         Winner = false;
     }
-
 
     // We can have a ToString that draws the board
     public override string ToString()

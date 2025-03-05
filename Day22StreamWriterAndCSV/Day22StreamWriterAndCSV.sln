@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day22StreamWriterAndCSV", "Day22StreamWriterAndCSV.csproj", "{CE65D771-AF30-923B-C4C8-369E16D947D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE65D771-AF30-923B-C4C8-369E16D947D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE65D771-AF30-923B-C4C8-369E16D947D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE65D771-AF30-923B-C4C8-369E16D947D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE65D771-AF30-923B-C4C8-369E16D947D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CD5EDBB-DCCF-431F-B978-FD03E0506039}
+	EndGlobalSection
+EndGlobal

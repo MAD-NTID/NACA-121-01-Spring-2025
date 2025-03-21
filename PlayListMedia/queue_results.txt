@@ -1,0 +1,8 @@
+Queue
+===============
+Next: Title,Category,Duration minutes
+Play: Title,Category,Duration minutes
+Next: Avatar,Action,2h 42min minutes
+Play: Avatar,Action,2h 42min minutes
+Next: Avengers: Endgame,Action,3h 1min minutes
+Play: Avengers: Endgame,Action,3h 1min minutes

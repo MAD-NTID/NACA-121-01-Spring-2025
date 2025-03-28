@@ -1,4 +1,6 @@
-public class Stack<T> : IStack<T>
+using System.Collections;
+
+public class Stack<T> : IStack<T>, IEnumerable<T>
 {
     public int Count { get; private set; }
     public Node<T> Top { get; private set; }
@@ -97,6 +99,11 @@ public class Stack<T> : IStack<T>
             yield return currentTop.Data;
             currentTop = currentTop.Next;
         }
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
     }
 
     public override string ToString()

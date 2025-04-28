@@ -20,4 +20,9 @@ public class Student : IStudent
     {
         AttendanceDates.Add(date);
     }
+
+    public override string ToString()
+    {
+        return $"{FirstName} {LastName}";
+    }
 }

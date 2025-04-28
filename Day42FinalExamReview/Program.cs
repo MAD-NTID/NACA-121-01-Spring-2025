@@ -55,6 +55,43 @@ while(!exit)
                     .Select(x => DateTime.Parse(x))
                     .ToList();
             }
+
+            // first if statement, to insert multiple attendance
+            if(attendances.Count > 0)
+                attendanceSystem.AddStudent(firstName, lastName, attendances);
+
+            // else, to insert a single attendance
+            else
+                attendanceSystem.AddStudent(firstName, lastName, DateTime.Parse(attendanceDate));
+        break;
+
+        case "4":
+            List<IStudent> sortedStudents = attendanceSystem.SortStudentsByLastName();
+            Console.WriteLine("Students Sorted by Last Name --");
+            foreach(IStudent student in sortedStudents)
+                Console.WriteLine($"\t{student}");
+        break;
+
+        case "5":
+            Console.Write("Enter the Start Date as yyyy-MM-dd: ");
+            DateTime from = DateTime.Parse(Console.ReadLine());
+
+            Console.Write("Enter the end Date as yyyy-MM-dd: ");
+            DateTime to = DateTime.Parse(Console.ReadLine());
+
+            List<IStudent> studentsInRange = attendanceSystem.SelectStudentsByDateRange(from, to);
+            Console.WriteLine($"\nStudents who attended class between {from.ToShortDateString()} and {to.ToShortDateString()} -- ");
+            foreach(IStudent student in studentsInRange)
+                Console.WriteLine($"\t{student}");
+        break;
+
+        case "6":
+            exit = true;
+            Console.WriteLine("Exiting the Program...");
+        break;
+
+        default:
+            Console.WriteLine("Invalid choice. Please enter a number between 1 and 5.");
         break;
     }
 }
